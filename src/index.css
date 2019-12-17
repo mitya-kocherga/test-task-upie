@@ -106,6 +106,7 @@ code {
     height: 100px;
 }
 
+.bookable-item.selected .picture,
 .bookable-item .picture:hover {
     border: #00b074 1px solid;
 }

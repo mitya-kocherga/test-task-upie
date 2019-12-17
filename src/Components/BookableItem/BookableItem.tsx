@@ -4,6 +4,7 @@ import cn from 'classnames';
 
 export interface BookableItemProp {
     id: number;
+    selected: boolean;
     name: string;
     address: string;
     price: number;
@@ -21,10 +22,10 @@ interface ItemPram {
 }
 
 export const BookableItem = (props: BookableItemProp) => {
-    const { name, address, price, params, onHover, id } = props;
+    const { name, address, price, params, onHover, id, selected } = props;
     return (
         <div
-            className="bookable-item"
+            className={cn("bookable-item", selected ? "selected" : '')}
             onMouseOver={() => onHover(id)}
             onMouseLeave={() => onHover(0)}
         >
