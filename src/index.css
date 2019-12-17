@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c1e1e2;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    background: #fff;
+    width: 80vw;
+    height: 90vh;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    border-radius: 55px 0 0 55px;
+}
+
+.menu-img {
+    width: 20px;
+    height: 20px;
+}
+
+.button {
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button.filled {
+    background-color: #00b074;
+    color: #fff;
+}
+
+.button.normal {
+    background-color: #fff;
+    color: #00b074;
+}
+
+.button.outlined {
+    border: 1px solid #7e888a;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 24px;
+    align-items: center;
+}
+
+.header .right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.search-results {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 660px;
+}
+
+.bookable-item {
+    width: 140px;
+    margin: 15px;
+    display: grid;
+}
+
+.bookable-item .elem {
+    margin: 3px 0 3px 0px;
+}
+
+.bookable-item .picture {
+    border: #fff 1px solid;
+    padding: 3px;
+    border-radius: 5px;
+    width: 130px;
+    height: 100px;
+}
+
+.bookable-item .picture:hover {
+    border: #00b074 1px solid;
+}
+
+.bookable-item .item-param {
+    display: flex;
+    border-top: 1px solid #eae8e8;
+    padding-top: 15px;
+    color: grey;
+}
+
+.bookable-item .item-param>* {
+    padding: 0px 3px 0px 2px;
+}
+
+.bookable-item .address {
+    color: grey;
+    font-size: 12px;
+}
+
+.bookable-item .price {
+    color: #00b074;
+}
+
+.filter-panel {
+    font-size: 24px;
+}
+
+.filter-panel>p {
+    margin-left: 24px;
+}
+
+.filter-panel .city-name {
+    color: #7e888a;
+    border-bottom: 1px #7e888a solid;
+}
+
+.drop-down-list {
+    position: absolute;
+    z-index: 5;
+    border: 0.3px solid #7e888a;
+    width: 200px;
+    background: #fff;
+}
+
+.drop-down-list>ul {
+    list-style: none;
+}
+
+.drop-down-elem {
+    cursor: pointer;
+}
+
+.drop-down-elem:hover {
+    color: #00b074;
+}
+
+.drop-down-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.drop-down-section>div {
+    margin: 10px;
+}
+
+.drop-down-button {
+    width: 130px;
+}
+
+.marker-selected {
+    color: #00b074;
+}
